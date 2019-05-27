@@ -4,8 +4,7 @@
 @import url("metro-colors.min.css");
 @import url("animate.css");
 
-#home {display: block; width: 100%; height: 700px; background: url(../images/landing-sinlogo.jpg) no-repeat no-repeat center; background-size: cover;}
-#home img {display: block; width: 30%; height: auto; margin: 82px auto 20px auto;}
+
 
 .app-bar {background: #b8cd0c !important;}
 
