@@ -1,26 +1,20 @@
+var cookie = Cookies.get('lang');
+
 WebApp.controller('contact', function($scope){
 	
-	$scope.homeEs = { 
+	$scope.Es = { 
 		txt1: 'Contact',
   }
   
-  $scope.homeEn = { 
+  $scope.En = { 
 		txt1: 'contact',
   }
-  
-  $scope.Lang = $scope.homeEs
 	
-	$scope.TxtLang = function(lang){
-		switch(lang){
-			case 'Es':
-				$scope.Lang = $scope.homeEs;
-				break
-			case 'En':
-				$scope.Lang = $scope.homeEn;
-				break
-			default:
-				$scope.Lang = $scope.homeEs;
-				break
-		}
+	if(cookie == undefined){
+		$scope.Lang = $scope.Es;
+	} else if(cookie === 'Es') {
+		$scope.Lang = $scope.Es;
+	} else {
+		$scope.Lang = $scope.En;
 	}
 })  

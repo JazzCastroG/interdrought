@@ -1,3 +1,5 @@
+var cookie = Cookies.get('lang');
+
 WebApp.controller('news', function($scope){
 	
 	$scope.homeEs = { 
@@ -7,20 +9,12 @@ WebApp.controller('news', function($scope){
   $scope.homeEn = { 
 		txt1: 'News',
   }
-  
-  $scope.Lang = $scope.homeEs
 	
-	$scope.TxtLang = function(lang){
-		switch(lang){
-			case 'Es':
-				$scope.Lang = $scope.homeEs;
-				break
-			case 'En':
-				$scope.Lang = $scope.homeEn;
-				break
-			default:
-				$scope.Lang = $scope.homeEs;
-				break
-		}
+	if(cookie == undefined){
+		$scope.Lang = $scope.Es;
+	} else if(cookie === 'Es') {
+		$scope.Lang = $scope.Es;
+	} else {
+		$scope.Lang = $scope.En;
 	}
 })  

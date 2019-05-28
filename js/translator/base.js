@@ -1,10 +1,11 @@
-var WebApp  = angular.module('WebApp', ['ngSanitize']);
+var WebApp  = angular.module('WebApp', ['ngSanitize']),
+		cookie = Cookies.get('lang');
 
 WebApp.controller('nav', function($scope){
 	
-$scope.Es = { 
+	$scope.Es = { 
 		//MENU titles
-		menu001: 'Bienvenida',
+		menu001: 'Inicio',
 		menu002: 'Landing page',
 		menu003: 'Invitation from Co-Chairs',
 		menu004: 'International Program Committee',
@@ -32,11 +33,11 @@ $scope.Es = {
 		menu026: 'Pre- and Post Conference Activities',
 		menu027: 'Contact Us',
 		menu028: 'Mailing List',
-		menu029: 'News',
+		menu029: 'News'
   }
   
-  $scope.En = { 
-		menu001: 'Bienvenida',
+	$scope.En = { 
+		menu001: 'Home',
 		menu002: 'Landing page',
 		menu003: 'Invitation from Co-Chairs',
 		menu004: 'International Program Committee',
@@ -64,18 +65,31 @@ $scope.Es = {
 		menu026: 'Pre- and Post Conference Activities',
 		menu027: 'Contact Us',
 		menu028: 'Mailing List',
-		menu029: 'News',
+		menu029: 'News'
   }
-  
-  $scope.Lang = $scope.Es
+	
+	if(cookie == undefined){
+		$scope.Lang = $scope.Es;
+		Cookies.set('lang', 'Es');
+	} else if(cookie == 'Es') {
+		$scope.Lang = $scope.Es;
+	} else {
+		Cookies.set('lang', 'En');
+		$scope.Lang = $scope.En;
+	}
+	
 	
 	$scope.TxtLang = function(lang){
 		switch(lang){
 			case 'Es':
 				$scope.Lang = $scope.Es;
+				Cookies.set('lang', 'Es');
+				window.location.reload();
 				break
 			case 'En':
 				$scope.Lang = $scope.En;
+				Cookies.set('lang', 'En');
+				window.location.reload();
 				break
 			default:
 				$scope.Lang = $scope.Es;
