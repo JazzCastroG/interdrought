@@ -17,9 +17,13 @@ section h1:first-of-type { font-weight: 500; }
 .green {color: #739e41;}
 
 body > nav.app-bar, body>footer { display: none; }
-		#landing { display: block; width: 100%; background: url("../images/landing-sinlogo.jpg") no-repeat no-repeat center; background-size: cover;}
-		#landing img {display: block; width: 30%; height: auto; margin: 20px auto;}
+
+#landing { display: block; width: 100%; background: url("images/landing-sinlogo.jpg") no-repeat no-repeat center; background-size: cover;}
+#landing img {display: block; width: 30%; height: auto; margin: 0px auto;}
+
 #invitation p {text-align: justify;}
+
+
 #invitation {padding: 50px 0px 100px 0px;}
 #text-line p {line-height: 20px;margin: 0px;}
 

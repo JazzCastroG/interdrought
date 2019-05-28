@@ -39,12 +39,12 @@
 	<nav data-role="appbar" data-expand-point="lg" ng-controller="nav">
 		<ul class="app-bar-menu flex-justify-center">
 			<li>
-				<a class="nav-link dropdown-toggle" href="home.html">{{Lang.menu001}}</a>
+				<a class="nav-link dropdown-toggle" href="index.html">{{Lang.menu001}}</a>
 				<ul class="d-menu" data-role="dropdown">
-					<li><a href="home.html">{{Lang.menu002}}</a></li>
-					<li><a href="home.html">{{Lang.menu003}}</a></li>
-					<li><a href="home.html">{{Lang.menu004}}</a></li>
-					<li><a href="home.html">{{Lang.menu005}}</a></li>
+					<li><a href="index.html#invitation">{{Lang.menu002}}</a></li>
+					<li><a href="committee.html">{{Lang.menu003}}</a></li>
+					<!--<li><a href="home.html">{{Lang.menu004}}</a></li>
+					<li><a href="home.html">{{Lang.menu005}}</a></li>-->
         </ul>
 			</li>
 			<li>
@@ -109,11 +109,11 @@
 		</ul>
 	</nav> 
 	<!-- InstanceBeginEditable name="content" -->
-	<section ng-controller="home">
-					<div class="img-container">
-					<img src="images/bg-gotas.jpg" alt="interdrought">
-					</div>
-		<section id="invitation">
+	<section ng-controller="welcome">
+		<div class="img-container">
+			<img src="../images/bg-gotas.jpg" alt="interdrought">
+		</div>
+		<article id="invitation">
 			<div class="container">
 				<div class="row">
 					<div class="cell-12">
@@ -145,38 +145,14 @@
 					</div>
 				</div>
 			</div>
-		</section>
-			<div class="img-container">
-					<img src="images/bg-catarina.jpg" alt="interdrought">
-			</div>
-		<section id="comite">
-			<div class="container">
-				<div class="row">
-					<div class="cell-12">
-						<div class="bgTitles">
-							<h1 class="title">{{Lang.txt20}}</h1>
-						</div> 
-						<p>{{Lang.txt21}}</p>
-						<p><strong>{{Lang.txt22}}</strong></p>
-						<p>{{Lang.txt23}}</p>
-						<p><strong>{{Lang.txt24}}</strong></p>
-						<p>{{Lang.txt25}}</p>
-						<p>{{Lang.txt26}}</p>
-						<p>{{Lang.txt27}}</p>
-						<p>{{Lang.txt28}}</p>
-						<p>{{Lang.txt29}}</p>
-						<p>{{Lang.txt30}}</p>
-						<p>{{Lang.txt31}}</p>
-						<p>{{Lang.txt32}}</p>
-						<p>{{Lang.txt33}}</p>
-						</div>
-					</div>
-				</div>
-		</section>
+		</article>
+		<div class="img-container">
+				<img src="../images/bg-catarina.jpg" alt="interdrought">
+		</div>
+		<div class="img-container">
+				<img src="../images/footer.jpg" alt="interdrought">
+		</div>
 	</section>
-			<div class="img-container">
-					<img src="images/footer.jpg" alt="interdrought">
-			</div>
 	<!-- InstanceEndEditable -->
 	<footer>
 	
@@ -186,7 +162,7 @@
 	<script src="js/translator/base.js?v=1.0" type="text/javascript"></script>
 	<script src="js/site.js?v=1.0" type="text/javascript"></script>
 	<!-- InstanceBeginEditable name="scripts" -->
-	<script src="js/translator/home.js" type="text/javascript"></script>
+	<script src="js/translator/welcome.js" type="text/javascript"></script>
 	<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
