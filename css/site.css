@@ -4,10 +4,12 @@
 @import url("metro-colors.min.css");
 @import url("animate.css");
 
+
+body > nav.app-bar, body > section { display: none; }
 body > section:first-of-type { padding-top: 53px; }
 
 section h1:first-of-type { color: hotpink; }
 
-.app-bar {background: #b8cd0c !important;}
+.app-bar { background: #b8cd0c !important; }
 
 

@@ -13,3 +13,9 @@ $(function(){
       scrollTop: $($(this).attr('href')).offset().top,    }, 1500, 'easeInOutExpo')
   });
 });
+$(function(){
+	setTimeout(function(){
+		$('body > nav.app-bar').fadeIn(300);
+		$('body > section').fadeIn(400);
+	}, 500)
+});

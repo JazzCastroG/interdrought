@@ -68,11 +68,9 @@ WebApp.controller('nav', function($scope){
 		menu029: 'News'
   }
 	
-	if(cookie == undefined){
+	if(cookie == undefined || cookie === 'Es'){
 		$scope.Lang = $scope.Es;
 		Cookies.set('lang', 'Es');
-	} else if(cookie == 'Es') {
-		$scope.Lang = $scope.Es;
 	} else {
 		Cookies.set('lang', 'En');
 		$scope.Lang = $scope.En;

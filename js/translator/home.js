@@ -11,9 +11,7 @@ WebApp.controller('home', function($scope){
   }
 	
 	
-	if(cookie == undefined){
-		$scope.Lang = $scope.Es;
-	} else if(cookie === 'Es') {
+	if(cookie == undefined || cookie === 'Es'){
 		$scope.Lang = $scope.Es;
 	} else {
 		$scope.Lang = $scope.En;

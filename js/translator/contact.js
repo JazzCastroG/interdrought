@@ -10,9 +10,7 @@ WebApp.controller('contact', function($scope){
 		txt1: 'contact',
   }
 	
-	if(cookie == undefined){
-		$scope.Lang = $scope.Es;
-	} else if(cookie === 'Es') {
+	if(cookie == undefined || cookie === 'Es'){
 		$scope.Lang = $scope.Es;
 	} else {
 		$scope.Lang = $scope.En;
