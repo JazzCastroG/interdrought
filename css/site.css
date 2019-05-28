@@ -8,8 +8,20 @@
 body > nav.app-bar, body > section { display: none; }
 body > section:first-of-type { padding-top: 53px; }
 
-section h1:first-of-type { color: hotpink; }
+section h1:first-of-type { font-weight: 500; }
 
 .app-bar { background: #b8cd0c !important; }
+.logo-nav {display: block; width: 30%; height: auto; padding: 10px 0px; margin: 0px auto;}
+.title { text-align: inherit; color: #FFF; letter-spacing: 1px; }
+.bgTitles { background: url(../images/tree.gif) no-repeat center center; background-size: cover; color: #fff;	-webkit-text-fill-color: transparent; -webkit-background-clip: text; }
+.green {color: #739e41;}
 
+body > nav.app-bar, body>footer { display: none; }
+		#landing { display: block; width: 100%; background: url("../images/landing-sinlogo.jpg") no-repeat no-repeat center; background-size: cover;}
+		#landing img {display: block; width: 30%; height: auto; margin: 20px auto;}
+#invitation p {text-align: justify;}
+#invitation {padding: 50px 0px 100px 0px;}
+#text-line p {line-height: 20px;margin: 0px;}
 
+#comite {padding: 50px 0px 100px 0px;}
+#comite p {text-align: justify;}
