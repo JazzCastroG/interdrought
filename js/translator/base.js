@@ -33,7 +33,10 @@ WebApp.controller('nav', function($scope){
 		menu026: 'Pre- and Post Conference Activities',
 		menu027: 'Contact Us',
 		menu028: 'Mailing List',
-		menu029: 'News'
+		menu029: 'News',
+		menu030: 'interdrought, congreso, 2020, international, maiz, trigo, centro, cimmyt, agricolas, variedades, mejoradas, agricultura, nutricion, semillas, cereales, sequia, alimento, sustentable, genetica, agricola, innovacion, mexico.',
+		menu031: 'CONGRESO INTERDROUGHT 2020 - CENTRO INTERNACIONAL DE MEJORAMIENTO DE MAÍZ Y TRIGO',
+
   }
   
 	$scope.En = { 
@@ -65,7 +68,9 @@ WebApp.controller('nav', function($scope){
 		menu026: 'Pre- and Post Conference Activities',
 		menu027: 'Contact Us',
 		menu028: 'Mailing List',
-		menu029: 'News'
+		menu029: 'News',
+		menu030: 'interdrought, congress, 2020, international, maize, wheat, improvement, center, cimmyt, science, farmers, cropping, systems, sustainable, food, agriculture, nutrition, genetic, seeds, agrodealers, irrigation, cereals, mexico.',
+		menu031: 'INTERDROUGHT CONGRESS 2020 - INTERNATIONAL MAIZE AND WHEAT IMPROVEMENT CENTER',
   }
 	
 	if(cookie == undefined || cookie === 'Es'){

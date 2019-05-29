@@ -19,3 +19,4 @@ $(function(){
 		$('body > section').fadeIn(400);
 	}, 500)
 });
+var car = $(element).data('carousel');
