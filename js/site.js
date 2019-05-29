@@ -6,17 +6,30 @@ $(function(){
 	}
 });
 $(function(){ 
-	$('nav-link').click(function(event){
+	$('.nav-link').click(function(event){
     event.preventDefault();
 		
     $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top,    }, 1500, 'easeInOutExpo')
+      scrollTop: $($(this).attr('href')).offset().top   
+		}, 1500, 'easeInOutExpo')
   });
 });
 $(function(){
 	setTimeout(function(){
 		$('body > nav.app-bar').fadeIn(300);
 		$('body > section').fadeIn(400);
+		$('body > footr').fadeIn(400);
 	}, 500)
 });
-var car = $(element).data('carousel');
+$(function(){
+	$('#carousel-bg').carousel({
+		autoStart: true,
+		period: 3000,
+		height: 400,
+		duration: 2000,
+		effect: 'fade',
+		effectFunc: 'ease-in-out',
+		controls: false,
+		bullets: false
+	});
+});
