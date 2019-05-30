@@ -3,7 +3,7 @@ var cookie = Cookies.get('lang');
 WebApp.controller('climate', function($scope){
 	
 	$scope.Es = { 
-		txt1: '',
+		txt1: 'Clima',
 		txt2: '',
 		txt3: '',
 		txt4: '',
@@ -51,7 +51,7 @@ WebApp.controller('climate', function($scope){
   }
   
   $scope.En = { 
-	  	txt1: '',
+	  	txt1: 'Climate',
 		txt2: '',
 		txt3: '',
 		txt4: '',
